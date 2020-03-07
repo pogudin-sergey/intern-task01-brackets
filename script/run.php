@@ -6,6 +6,8 @@
  * @license MIT
  */
 
+require_once '../vendor/autoload.php';
+
 /* Setting */
 define('STRING_MIN_LEN', 2);
 
@@ -34,30 +36,6 @@ if($argc != 2)
 }
 
 /* Run */
-$result = (verify_brackets($data)) ? 'YES' : 'NO';
+$result = (Pogudin\Verifier\Brackets::verify($data)) ? 'OK' : 'INCORRECT';
 $result .= PHP_EOL;
 echo $result;
-
-/* Logic */
-function verify_brackets($string) {
-    $string_len = mb_strlen($string);
-    $stack = array();
-
-    for ($i = 0; $i < $string_len; $i++) {
-        $symbol = mb_substr($string, $i, 1);
-
-        if ($symbol == '(') {
-            $stack[] = $symbol;
-
-        } elseif ($symbol === ')') {
-            if (!$last = array_pop($stack))
-                return false;
-
-            if ($symbol === ')' && $last !== '(') {
-                return false;
-            }
-        }
-    }
-
-    return (count($stack) === 0);
-}
