@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 use Pogudin\Verifier;
 
-class ExampleTest extends TestCase
+class bracketsTest extends TestCase
 {
     public function providerValidatorTrue(){
         return [

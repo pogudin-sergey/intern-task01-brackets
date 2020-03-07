@@ -8,7 +8,8 @@
 
 use Pogudin\Verifier;
 
-require_once '../vendor/autoload.php';
+$root_path = realpath(__DIR__ . '/../');
+require_once "$root_path/vendor/autoload.php";
 
 /* Setting */
 define('STRING_MIN_LEN', 2);
