@@ -6,6 +6,8 @@
  * @license MIT
  */
 
+use Pogudin\Verifier;
+
 require_once '../vendor/autoload.php';
 
 /* Setting */
@@ -36,6 +38,6 @@ if($argc != 2)
 }
 
 /* Run */
-$result = (Pogudin\Verifier\Brackets::verify($data)) ? 'OK' : 'INCORRECT';
+$result = (Verifier\Brackets::verify($data)) ? 'OK' : 'INCORRECT';
 $result .= PHP_EOL;
 echo $result;
