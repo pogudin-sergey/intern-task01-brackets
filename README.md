@@ -21,14 +21,16 @@
 
 ## Вариант 1 
 ```bash
-php -f run.php  '5 * (4 - 2)'
-php -f run.php  '5 * (4 - 2('
+php -f ./script/run.php  '5 * (4 - 2)'
+php -f ./script/run.php  '5 * (4 - 2('
 ```
 
 ## Вариант 2
 ```bash
 chmod +x run.php
 
-./run.php '5 * (4 - 2)'
-./run.php '5 * (4 - 2('
+./script/run.php '5 * (4 - 2)'
+./script/run.php '5 * (4 - 2('
 ```
+
+[![Build Status](https://travis-ci.com/pogudin-sergey/intern-task01-brackets.svg?token=szyRNoWvtxanu4zqA8en&branch=master)](https://travis-ci.com/pogudin-sergey/intern-task01-brackets)
