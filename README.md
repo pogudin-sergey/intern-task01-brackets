@@ -1,4 +1,7 @@
-# Утилита "Скобки"
+# Утилита "Скобки" [![Build Status](https://travis-ci.com/pogudin-sergey/intern-task01-brackets.svg?token=szyRNoWvtxanu4zqA8en&branch=master)](https://travis-ci.com/pogudin-sergey/intern-task01-brackets)
+
+[![Total Downloads](https://img.shields.io/packagist/dt/pogudin-sergey/intern-task01-brackets.svg)](https://packagist.org/packages/pogudin-sergey/intern-task01-brackets)
+[![Latest Stable Version](https://img.shields.io/packagist/v/pogudin-sergey/intern-task01-brackets.svg)](https://packagist.org/packages/pogudin-sergey/intern-task01-brackets)
 
 ## Описание утилиты
 Утилита командной строки проверяющая корректность расстановки скобок.
@@ -32,5 +35,3 @@ chmod +x run.php
 ./script/run.php '5 * (4 - 2)'
 ./script/run.php '5 * (4 - 2('
 ```
-
-[![Build Status](https://travis-ci.com/pogudin-sergey/intern-task01-brackets.svg?token=szyRNoWvtxanu4zqA8en&branch=master)](https://travis-ci.com/pogudin-sergey/intern-task01-brackets)
